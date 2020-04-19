@@ -1,0 +1,3 @@
+batch_size : 32
+num_epoch : 100
+source_audio_path: "C:/Users/hasee/Desktop/Voxceleb1/Train/"
