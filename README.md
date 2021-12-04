@@ -8,7 +8,7 @@ You should first download the VoxCeleb1 Dataset or your own speaker identificati
 
 The dataset preprocess script and training scripts are listed in corresponding directory, they should be easy to use with minor custom change in path.
 
-We recommend you just apply the model architecture, and use module like pytorch-lightening to do training since the prepocessing and training code build on older version on Pytorch 1.1, and not neat enough.
+We recommend you just apply the model architecture, and use module like pytorch-lightening to do training since the prepocessing and training code are built on older version of Pytorch, and not neat enough.
 
 
 If you use this work or code, please kindly cite the following paper:
