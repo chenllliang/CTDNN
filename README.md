@@ -4,7 +4,7 @@
 The main model architecrue CTDNN is defined in `Models/model.py` . **CTDNN can replace original TDNN easily in your own model**. Note that the default parameters may not be equal to the papers' model, you can change the number and dimention of the filters in each layer following our code.
 
 
-You should first download the VoxCeleb1 Dataset or your own speaker identification datasets. Then, follow the codes under `Preprocessing` directory or your own methods to extract MFCC features and generate training/dev examples. After that, you can train the model with the help of script in `Train` dataset.
+You should first download the [VoxCeleb1](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html)Dataset or your own speaker identification datasets. Then, follow the codes under `Preprocessing` directory or your own methods to extract MFCC features and generate training/dev examples. After that, you can train the model with the help of script in `Train` dataset.
 
 The dataset preprocess script and training scripts are listed in corresponding directory, they should be easy to use with minor custom change in path.
 
