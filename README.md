@@ -1,4 +1,4 @@
-# Source Code for Paper "Crossed-Time Delay Neural Network for Speaker Recognition"
+# Source Code for MMM 2021 Paper "Crossed-Time Delay Neural Network for Speaker Recognition"
  
 
  ![model](model.png)
