@@ -1,0 +1,7 @@
+librosa
+python_speech_features
+torch == 1.4.0
+yaml
+numpy
+matplotlib
+mpl_toolkits

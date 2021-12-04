@@ -1,5 +1,4 @@
 import torch
-import torchvision
 import yaml
 import torch.optim as optim
 import torch.nn as nn

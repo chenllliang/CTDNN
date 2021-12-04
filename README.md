@@ -1,5 +1,7 @@
-# Original Code for Paper "Crossed-Time Delay Neural Network for Speaker Recognition"
+# Source Code for Paper "Crossed-Time Delay Neural Network for Speaker Recognition"
  
+
+ ![model](model.png)
 
 The main model architecrue CTDNN is defined in `Models/model.py` . **CTDNN can replace original TDNN easily in your own model**. Note that the default parameters may not be equal to the papers' model, you can change the number and dimention of the filters in each layer following our code.
 
