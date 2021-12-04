@@ -1,6 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
+from FTDNN import FTDNN
 
 
 class TDNN(nn.Module):
@@ -123,7 +124,7 @@ class TDXN(nn.Module):
 
 
 class CTDNN(nn.Module):
-    def __init__(self, in_dim,num_speakers):
+    def __init__(self, in_dim,num_speakers=512):
         super(CTDNN, self).__init__()
         self.frame1_1 = TDNN(input_dim=in_dim, output_dim=512, context_size=3, dilation=1)
         self.frame1_2 = TDNN(input_dim=in_dim, output_dim=512, context_size=5, dilation=1)
@@ -180,12 +181,3 @@ class CTDNN(nn.Module):
 
         return x
 
-
-if __name__=="__main__":
-    net3 = CTDNN(13)
-    net = TDXN(13)
-    net2 = FTDNN(13)
-
-    print('# TDNN parameters:', sum(param.numel() for param in net.parameters()))
-    print('# FTDNN parameters:', sum(param.numel() for param in net2.parameters()))
-    print('# CTDNN parameters:', sum(param.numel() for param in net3.parameters()))
